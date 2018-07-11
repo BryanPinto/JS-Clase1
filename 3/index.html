@@ -14,6 +14,12 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
   </head>
   <body>
     <h1> Hey !! </h1>
@@ -62,5 +68,17 @@
 
       </fieldset>
     </form>
+
+    <script>
+      $("h1").css("color", "red");
+      $(".section-1").css("background-color", "yellow");
+      $(".counter").text(parseInt($(".counter").text()) + 10);
+      $("#row-3").on("click", function(){
+        $("#row-3").css("background-color", "gray");
+        $("#row-3").css("transition", "1s");
+      })
+      $(".section-1 h1").css("font-size", "3em");
+      $("table tr:last-child").css("background-color", "red");
+    </script>
   </body>
 </html>
